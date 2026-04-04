@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 void sortcolors(vector<int> &nums)
-int n = nums.size();{
+int n = nums.size();
 int low = 0, mid = 0, high = n-1;
 while(mid <= high){
     if(nums[mid] == 0){
@@ -15,5 +15,5 @@ while(mid <= high){
         high --;
     }
     }
-}
+
     
