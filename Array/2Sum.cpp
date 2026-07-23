@@ -6,11 +6,11 @@ vector<int> twoSum(vector<int>& nums, int target){
     for(int i=0; i<n; i++){
         int remaining = target - nums[i];
         if(mp.find(remaining)!= mp.end()){
-            return{mp[remaining], i};
+            return{mp[remaining], i}; // return the indices of the two numbers that add up to the target
         }
-        mp[nums[i]] = i;
+        mp[nums[i]] = i; // store current number and its index in the map
     }
-    return{};
+    return{}; // return an empty vector if no solution is found
 }
 int main(){
     vector<int> nums = {2,7,11,15};
